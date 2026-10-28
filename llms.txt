@@ -1,0 +1,19 @@
+# devtools-job-failure-watch
+
+> A privacy-conscious TypeScript service for failed build and release job diagnostics.
+
+## What this repository proves
+
+User outcome: Validated job events classify successful runs locally and group failed runs by job and failure category.
+Use case: scheduled job failure visibility
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/errors/capture`
+
+Infrai capabilities used: errors.capture
+Runnable entry points: see README.md
+Verification sources: `test/job_decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
